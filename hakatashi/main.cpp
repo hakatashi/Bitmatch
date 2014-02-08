@@ -4193,14 +4193,14 @@ bool IsKilled(int fin_int, int hand, int turn) {
 
 int main(void)
 {
-    int i, j, k, turn, temp, fin, t;
+	int i, j, k, turn, temp, fin, t;
 	bool finger[16];
-    while(1) {
-        scanf("%d", &turn);
-        for(i = 0; i < 2; i++) {
-            for(j = 0; j < 2; j++) {
-                for(k = 0; k < 4; k++) {
-                    scanf("%d", &temp);
+	while(1) {
+		scanf("%d", &turn);
+		for(i = 0; i < 2; i++) {
+			for(j = 0; j < 2; j++) {
+				for(k = 0; k < 4; k++) {
+					scanf("%d", &temp);
 					finger[i*8+j*4+k]=temp?true:false;
 				}
 			}
@@ -4221,9 +4221,9 @@ int main(void)
 			}
 		}
 
-        if (flag==true) printf("%d %d %d\n", rand() % 2, rand() % 2, rand() % 4);
+		if (flag==true) printf("%d %d %d\n", rand() % 2, rand() % 2, rand() % 4);
 
-        fflush(stdout);
-    }
-    return 0;
+		fflush(stdout);
+	}
+	return 0;
 }
